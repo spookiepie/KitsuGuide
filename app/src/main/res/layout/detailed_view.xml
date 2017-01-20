@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FCE49B"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/title"
+        android:textSize="25sp"
+        android:textColor="@color/colorBlack"/>
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:id="@+id/big_picture"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6C8784"
+        android:id="@+id/description"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Started airing: "
+        android:id="@+id/airing_status"
+        android:textColor="@color/colorBlack"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/animeStatus"
+            android:textColor="#6C8784"
+            android:layout_toRightOf="@id/airing_status"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ended airing: "
+        android:id="@+id/airing_end"
+        android:textColor="@color/colorBlack"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/airingEnded"
+        android:textColor="#6C8784"
+        android:layout_toRightOf="@id/airing_end"
+        />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of episodes: "
+            android:id="@+id/episodes_num"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/episodeCount"
+            android:textColor="#6C8784"
+            android:layout_toRightOf="@+id/episodes_num"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Episode length: "
+            android:id="@+id/episode_length"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/episodeLength"
+            android:textColor="#6C8784"
+            android:layout_toRightOf="@+id/episode_length"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Kitsu Ratings"
+        android:textColor="@color/colorBlack"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+<ua.example.pie.animesearch.customView.BarChart
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:id="@+id/barChart"
+    android:background="@color/colorWhite"
+/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_to_fav"
+        android:text="Add to favourites"
+        android:textSize="12sp"
+        android:textColor="#6C8784"
+        android:background="@drawable/add_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="9dp"
+        android:onClick="onClickAdd"
+        />
+
+
+    <Button
+        android:id ="@+id/browser_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6C8784"
+        android:text="YouTube preview"
+        android:textSize="12sp"
+        android:background="@drawable/browser_button"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="onClickBrowser"
+        />
+
+</LinearLayout>
+</ScrollView>

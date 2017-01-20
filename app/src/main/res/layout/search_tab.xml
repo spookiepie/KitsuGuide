@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:background="#DCC5E8"/>
+    <ListView
+        android:id="@+id/animes_list_view"
+        android:contextClickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FCE49B"/>
+</LinearLayout>
